@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: Ravi Mashru
+description: Ravi Mashru's home page on the internet
 github_username: ravimashru
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "fastblog"
@@ -39,8 +39,10 @@ baseurl: "/fastblog" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    twitter: ravimashru
+    github: ravimashru
+    linkedin: ravi-mashru
+    devto: ravimashru
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -78,6 +80,9 @@ default_badges:
 # Escape HTML in post descriptions
 html_escape:
   description: false
+
+# Remove categories from post permalinks
+permalink: /:year/:month/:day/:title:output_ext
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
