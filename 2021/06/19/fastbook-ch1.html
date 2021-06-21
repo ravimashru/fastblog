@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Reading Notes - Ch. 1 - Fastbook | Ravi Mashru</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Reading Notes - Ch. 1 - Fastbook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Reading notes taken when going through chapter 1 of fastbook" />
+<meta property="og:description" content="Reading notes taken when going through chapter 1 of fastbook" />
+<link rel="canonical" href="https://ravimashru.github.io/fastblog/2021/06/19/fastbook-ch1.html" />
+<meta property="og:url" content="https://ravimashru.github.io/fastblog/2021/06/19/fastbook-ch1.html" />
+<meta property="og:site_name" content="Ravi Mashru" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-19T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://ravimashru.github.io/fastblog/2021/06/19/fastbook-ch1.html","@type":"BlogPosting","headline":"Reading Notes - Ch. 1 - Fastbook","dateModified":"2021-06-19T00:00:00-05:00","datePublished":"2021-06-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ravimashru.github.io/fastblog/2021/06/19/fastbook-ch1.html"},"description":"Reading notes taken when going through chapter 1 of fastbook","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastblog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ravimashru.github.io/fastblog/feed.xml" title="Ravi Mashru" /><link rel="shortcut icon" type="image/x-icon" href="/fastblog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastblog/">Ravi Mashru</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastblog/search/">Search</a><a class="page-link" href="/fastblog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Reading Notes - Ch. 1 - Fastbook</h1><p class="page-description">Reading notes taken when going through chapter 1 of fastbook</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-19T00:00:00-05:00" itemprop="datePublished">
+        Jun 19, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastblog/categories/#fastbook">fastbook</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/fastblog/categories/#reading-notes">reading-notes</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <blockquote>
+  <p>Deep learning is a computer technique to extract and transform data… by using multiple layers of neural networks.</p>
+</blockquote>
+
+<blockquote>
+  <p>The layers are trained by algorithms that minimize their errors and improve their accuracy.</p>
+</blockquote>
+
+<p>What you don’t need to get great results with deep learning:</p>
+
+<ul>
+  <li>Lots of math (high school math is sufficient)</li>
+  <li>Lots of data (record breaking results obtained with &lt;50 items of data)</li>
+  <li>Lots of expensive computers (you can get what you need to obtain state-of-the-art results for free)</li>
+  <li>A PhD</li>
+</ul>
+
+<p>Examples of places where deep learning is the best in the world</p>
+
+<ul>
+  <li>Natural Language Processing
+    <ul>
+      <li><a href="https://openai.com/blog/dall-e/">Creating Images from Text</a></li>
+      <li><a href="https://deepai.org/machine-learning-model/summarization">Text Summarization</a></li>
+      <li><a href="https://ai.googleblog.com/2018/05/smart-compose-using-neural-networks-to.html">Smart Compose in Gmail</a></li>
+    </ul>
+  </li>
+  <li>Computer vision
+    <ul>
+      <li><a href="http://destiny.liacs.nl/">Image classification</a></li>
+      <li><a href="https://milhidaka.github.io/chainer-image-caption/">Image captioning</a></li>
+      <li><a href="https://www.youtube.com/watch?v=9e2x4dDRB-k&amp;ab_channel=FredrikGustafsson">Autonomous vehicles</a></li>
+    </ul>
+  </li>
+  <li>Medicine
+    <ul>
+      <li><a href="https://health.google/for-clinicians/ophthalmology/">Diabetic retinopathy detection</a></li>
+    </ul>
+  </li>
+  <li>Image generation
+    <ul>
+      <li><a href="https://www.nvidia.com/research/inpainting/">Image Inpainting</a></li>
+      <li><a href="https://letsenhance.io/">Increasing image resolution</a></li>
+      <li><a href="https://fluxml.ai/experiments/styleTransfer/">Converting images to art in the style of famous artists</a></li>
+    </ul>
+  </li>
+  <li>Recommendation systems
+    <ul>
+      <li>Amazon</li>
+      <li>Netflix</li>
+    </ul>
+  </li>
+  <li>Playing games
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=WXuK6gekU1Y">AlphaGo</a></li>
+      <li><a href="https://www.youtube.com/watch?v=TmPfTpjtdgg&amp;t=72s&amp;ab_channel=DeepMind">Breakout</a></li>
+    </ul>
+  </li>
+  <li>Robotics
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=fRj34o4hN4I&amp;t=54s&amp;ab_channel=BostonDynamics">Clearing an obstacle course</a></li>
+      <li><a href="https://www.youtube.com/watch?v=fn3KWM1kuAw&amp;ab_channel=BostonDynamics">Dancing!</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>The fastai library adds higher-level functionality on top of PyTorch. However:</p>
+
+<blockquote>
+  <p>…it doesn’t really matter what software you learn, because it only takes a few days to switch from one library to another. What really matters is learning the deep learning foundations, and techniques properly.</p>
+</blockquote>
+
+<blockquote>
+  <p>You should assume that whatever specific libraries and software you learn today will be obsolete in a year or two.</p>
+</blockquote>
+
+<h2 id="machine-learning-vs-regular-programming">Machine learning vs regular programming</h2>
+
+<p>With regular programming, we write down for the computer the exact steps necessary to complete a task. But when trying to recognize an object in a picture, we don’t know what steps we take - it all happens in our brain without us being consciously aware of it!</p>
+
+<p>The basic idea of machine learning (according to Arthur Samuel) is to show the computer examples of the problem to solve and let it figure out how to solve it itself, instead of outlining the exact steps to be followed to solve the problem.</p>
+
+<p>How he described his idea:</p>
+
+<blockquote>
+  <p>Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a mechanism for altering the weight assignment so as to maximize the performance. We need not go into the details of such a procedure to see that it could be made entirely automatic and to see that a machine so programmed would “learn” from its experience.</p>
+</blockquote>
+
+<p>The key ideas in this statement are:</p>
+
+<ol>
+  <li>We can assign “weights” that would determine how the program reacts to different inputs</li>
+  <li>For any given weights, there is an automatic means of measuring how well those weights allow the program to perform</li>
+  <li>There is a mechanism that improves this performance by making the necessary adjustments to the assigned weights</li>
+</ol>
+
+<p><img src="/fastblog/images/ml.png" alt="" /></p>
+
+<p>There are a few minor changes in modern terminology:</p>
+
+<ul>
+  <li>The program that describes the functional form of the model is now called the model “architecture”</li>
+  <li>Weights are now referred to as model “parameters”</li>
+  <li>The results of the model are called “predictions”</li>
+  <li>The measure of performance is called the “loss”</li>
+  <li>The data consists of two parts: the “independent variable” that is used to calculate predictions and the correct “labels” that are used with the model predictions to calculate the loss</li>
+</ul>
+
+<p><img src="/fastblog/images/ml-today.png" alt="" /></p>
+
+<p>It’s hard to understand why a deep learning model makes a particular prediction because it is hard to determine what parts of the input the different layers are using to pass information to the next layers, and deep learning models have several such layers. However, there are techniques we can use to determine which parts of the input a deep learning model is focusing in while making a predictions (e.g. <a href="http://gradcam.cloudcv.org/">Grad-CAM</a>)</p>
+
+<p>The universal approximation theorem shows that a neural network can, in theory, solve any problem to any level of accuracy.</p>
+
+<p>Stochastic Gradient Descent (SGD) is a general way to update the weights of a neural network so that its performance on any task improves.</p>
+
+<h2 id="limitations-of-machine-learning">Limitations of machine learning</h2>
+
+<ul>
+  <li>A model cannot be created without data</li>
+  <li>A model can learn how to make predictions based on only patterns seen in the data used to train it</li>
+  <li>A trained model can only make predictions, and not provide recommended actions</li>
+  <li>We don’t just need input data, we need correct labels for that data too</li>
+</ul>
+
+<p>Machine learning models can be negatively affected based on how they interact with their environment. Example: predictive policing.</p>
+
+<ul>
+  <li>Model created based on where arrests have been made in past</li>
+  <li>As a result, model is not predicting crime but reflecting biases in existing policing processes</li>
+  <li>Law enforcement officers try to use model to decide where to focus effort, resulting in more arrests in those areas</li>
+  <li>Data of additional arrests used to retrain future versions of model</li>
+</ul>
+
+<p>This is a “positive feedback loop” - model is used more =&gt; data becomes more biased =&gt; model becomes even more biased, and so on.</p>
+
+<p>Another example of a feedback loop:</p>
+
+<ul>
+  <li>Conspiracy theorists and extremists tend to watch more online video content than average.</li>
+  <li>A video recommendation system that uses this data will be biased towards recommending more of such content</li>
+  <li>As a result, such users increase their video consumption leading to more such videos being recommended.</li>
+</ul>
+
+<p>Transforms: code that is applied to data before being fed into the model during training.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">item_tfms</code>: applied to each item (on CPU)</li>
+  <li><code class="language-plaintext highlighter-rouge">batch_tfms</code>: applied to entire batch of items (on GPU)</li>
+</ul>
+
+<p>Classification - predict class or category
+Regression - predict one or more numeric quantities</p>
+
+<h2 id="training-and-validation-set">Training and Validation set</h2>
+
+<p>Data that you hold out during training so that you can use it later to evaluate the performance of the model on data it has never seen before. The remaining data that is used to train the model is called the training set.</p>
+
+<p>If not specified, fastai uses a default validation set of size 20%. fastai always shows model’s accuracy using only validation set.</p>
+
+<p>We need to use a validation set to measure the model’s performance so that we can be sure it isn’t overfitting - memorizing the data in the training set instead of finding underlying patterns in the data.</p>
+
+<blockquote>
+  <p>Overfitting is the single most important and challenging issue</p>
+</blockquote>
+
+<p>However, use methods to avoid overfitting only after confirming that overfitting is occurring. Using overfitting avoidance techniques when you don’t need to leads to a model that is less accurate than what could be achieved.</p>
+
+<h2 id="model-architecture">Model architecture</h2>
+
+<p>Picking an architecture isn’t a very important part of the process, not something you spend too much time on. There are some standard architectures that work great most of the time.</p>
+
+<h2 id="loss-vs-metric">Loss vs. Metric</h2>
+
+<p>A metric is a function that measures the quality of the model’s predictions.</p>
+
+<p>A loss function is used to define a measure of performance that can be used by a training algorithm to automatically update the model’s weights.</p>
+
+<p>Loss functions are meant for the training algorithm (e.g. SGD) and metrics are meant for humans - they should be easy to understand.</p>
+
+<p>Sometimes, the loss may be a suitable metric but not always.</p>
+
+<h2 id="pretrained-models">Pretrained models</h2>
+
+<blockquote>
+  <p>A model that has weights that have already been trained on another dataset is called a <strong>pretrained model</strong></p>
+</blockquote>
+
+<p>Always try to start with pretrained models since they already have some capabilities before you even train them on your dataset.</p>
+
+<p>When using a pretrained model, last layer is removed because it is very specific to task that model was initially trained on. It is replaced with new layers with randomized weights that fits the task currently trying to be solved. This part of the network is called the <strong>head</strong>.</p>
+
+<p>Using pretrained models allows us to:</p>
+<ul>
+  <li>train more accurate models</li>
+  <li>train models more quickly</li>
+  <li>train models using less data</li>
+  <li>train models with less time and money.</li>
+</ul>
+
+<h2 id="transfer-learning">Transfer Learning</h2>
+
+<p>Transfer learning is when you take a pretrained model and use it for a task different from the one it was originally trained for.</p>
+
+<p>Current challenges:</p>
+<ul>
+  <li>Transfer learning is highly understudied and therefore few domains have pretrained models available</li>
+  <li>It is not yet well understood how to use transfer learning for tasks such as time series analysis</li>
+</ul>
+
+<p><strong>Fine-tuning</strong> is the process of adapting a pretrained model for a new dataset. You update the weights of the model using the new dataset.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">fine_tune</code> method in fastai does the following:</p>
+
+<ol>
+  <li>Use one epoch to fit parts of the model that get the new head working correctly with the new dataset</li>
+  <li>Updates parameters of the entire models. Weights of later layers (especially the head) are updated much faster than earlier layers</li>
+</ol>
+
+<h2 id="non-image-tasks">Non-Image Tasks</h2>
+
+<p>Image recognizers are capable of performing non-image tasks.</p>
+
+<p>Examples of projects where image recognizers were used</p>
+
+<ul>
+  <li>Convert environmental sounds to spectrogram</li>
+  <li>Convert time series data to image using  Gramian Angular Difference Field</li>
+  <li>Draw time-series data of mouse movements (position, speed, acceleration using different colors) and clicks</li>
+  <li>Convert binary file to image where each byte is converted to color pixel in grayscale</li>
+</ul>
+
+<h2 id="tabular-data">Tabular data</h2>
+
+<p>Data in the form of a table. A tabular model tries to predict the values in one column of the table based on values in the other columns.</p>
+
+<p>When training a model on tabular data, we have to specify which columns are categorical (contain values that are from a set of discrete choices) and which ones are continuous (numbers representing a quantity).</p>
+
+<p>Generally, there are no pretrained models available for tabular modeling tasks. However, some organizations may have created some for internal use.</p>
+
+<h2 id="rapid-prototyping">Rapid prototyping</h2>
+
+<p>THe world’s top practitioners do their experimentation and prototyping with just a subset of their entire dataset. Once they have a good understanding of what they have to do, they start using the full dataset.</p>
+
+<p>Using a subset of data makes training models quicker and allows you to iterate faster.</p>
+
+<h2 id="validation-and-test-set">Validation and test set</h2>
+
+<p>Already discussed: importance of training and validation set.</p>
+
+<p>We rarely train model just once. We explore many versions of a model by making choices for <strong>hyperparameters</strong> like network architecture, learning rates, data augmentation strategies.</p>
+
+<p>We look at model performance on validation data while exploring hyperparameter values. As a result, the model is at risk of overfitting validation data through human trial and error and exploration.</p>
+
+<p>The test set is a subset of data apart from training and validation data. It is held back when trying to improve model by tuning hyperparameters and used only at the end to evaluate the final performance of the model.</p>
+
+<blockquote>
+  <p>…if you have very little data, you may need just a validation set - but generally it’s best to use one if at all possible</p>
+</blockquote>
+
+<p>Validation and test sets must be representative of new data the model will see in the future.</p>
+
+<p>For time series data, since the model will be making predictions in the future having seen only past data, the validation set can be a continuous section of the dataset with the latest dates instead of random points. Choosing random points means the model trains by seeing data that comes before and after the date it needs to make the prediction, however when the model is actually being used it will only have knowledge of past data.</p>
+
+<p>Also consider the qualitative differences in data used to train model and data that the model will be seeing in production. Example: training an image recognition model to see if a driver is distracted may see people while running in production that it has never seen during training. So keep images in validation set that are of people the model has never seen during training.</p>
+
+
+  </div><a class="u-url" href="/fastblog/2021/06/19/fastbook-ch1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastblog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastblog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastblog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Ravi Mashru&#39;s home page on the internet</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/ravimashru" title="ravimashru"><svg class="svg-icon grey"><use xlink:href="/fastblog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/ravi-mashru" title="ravi-mashru"><svg class="svg-icon grey"><use xlink:href="/fastblog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/ravimashru" title="ravimashru"><svg class="svg-icon grey"><use xlink:href="/fastblog/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a href="https://dev.to/ravimashru" title="ravimashru"><svg class="svg-icon grey"><use xlink:href="/fastblog/assets/minima-social-icons.svg#devto"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
